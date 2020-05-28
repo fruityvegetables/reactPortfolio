@@ -6,7 +6,7 @@ import ProjectHolder from './components/ProjectHolder/ProjectHolder.js';
 function App() {
   return (
     <div className="App">
-      <p>this is showing up!</p>
+      <h1>Garrett Troyer's React Portfolio!</h1>
       <ProjectHolder />
       <Footer />
       

@@ -7,13 +7,17 @@ function Project(props) {
       <div className="content">
 
           <p>
-            <strong>Name:</strong> {props.name}
+            <strong>
+                <h3>
+                    {props.name}
+                </h3>
+                </strong> 
             <div className="img-container">
           For gif image later
             </div>
           </p>
           <p>
-            <strong>Link:</strong> {props.link}
+            <strong>Link to deployed version:</strong> {props.link}
           </p>
 
       </div>
