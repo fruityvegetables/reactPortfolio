@@ -4,7 +4,6 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer className="footer">
-      <span><h2>Check out my profiles!</h2></span>
       <div>
               <p>
                   <a href="https://github.com/fruityvegetables" target="blank">Github</a>

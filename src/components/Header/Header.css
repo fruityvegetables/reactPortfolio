@@ -1,0 +1,7 @@
+.header {
+    min-height: 420px;
+    position: relative;
+    background-image: url(./unnatural.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
