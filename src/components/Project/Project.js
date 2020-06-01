@@ -6,20 +6,21 @@ function Project(props) {
     <div className="project">
       <div className="content">
 
-          <p>
+          <div>
             <strong>
                 <h3>
                     {props.name}
+
                 </h3>
                 </strong> 
             <div className="img-container">
           For gif image later
             </div>
-          </p>
+          </div>
           <p>
             <strong>Link to deployed version:</strong> {props.link}
           </p>
-
+          <button onClick={props.onClick}>{props.dataId}</button>
       </div>
     </div>
   );

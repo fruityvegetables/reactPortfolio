@@ -29,19 +29,47 @@ class ProjectHolder extends React.Component {
                 {
                     name: "Superhero Background & Backgrounds", 
                     link: <a href="https://cynthia-dm1216.github.io/ProjectGroup1/" target="blank">Click me!</a>
+                },
+                {
+                    name: "PlantSheets", 
+                    link: <a href="https://cynthia-dm1216.github.io/ProjectGroup1/" target="blank">Click me!</a>
                 }
             ]
 
         }
     }
 
+   activateMelting(blah){
+        //doom function goes here
+        console.log(blah)
+        switch (blah) {
+            case "Express Note Taker": 
+                console.log("this is note taker");
+                break;
+            case "React Employee Directory":
+                alert("this is emp directory");
+                break;
+            case "React Google Book Search":
+                window.confirm("Do YOU REALLY WANNA SEE THIS???");
+                break;
+            default: 
+                console.log("no switch case made for this yet");
+        }
+    }
     render() {
         return (
             <div className="projectHolder">
-            {this.state.projects.map(projects => (
+            {this.state.projects.map((projects, index) => (
         <Project 
         name = {projects.name}
-        link = {projects.link}/>
+        link = {projects.link}
+        dataId = {projects.name} 
+        key = {index}
+        onClick={() => {
+            this.activateMelting(projects.name);
+           
+         }}
+        />
 
         
       ))}
