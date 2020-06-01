@@ -1,7 +1,9 @@
 .footer {
     min-height: 420px;
-    background: #E5E5E5;
     position: relative;
+    background-image: url(./unnatural.gif);
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
   .footer span {

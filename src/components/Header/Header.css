@@ -1,7 +1,14 @@
 .header {
-    min-height: 420px;
     position: relative;
-    background-image: url(./unnatural.gif);
-    background-repeat: no-repeat;
-    background-position: center;
+}
+
+.header p {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header a {
+    color: black;
+    border: white 2px solid;
 }

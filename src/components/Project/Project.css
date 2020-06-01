@@ -1,9 +1,27 @@
 .project {
     border: 2px solid black;
 }
-.project:nth-of-type(2) {
-    background: red;
+
+.project:nth-of-type(1) {
+    background: teal;
   }
-  .project:nth-of-type(3) {
-    background: green;
+
+.project:nth-of-type(2) {
+    background: purple;
+  }
+
+.project:nth-of-type(3) {
+    background: teal;
+  }
+
+.project:nth-of-type(4) {
+    background: purple;
+  }
+
+.project:nth-of-type(5) {
+    background: teal;
+  }
+
+.project:nth-of-type(6) {
+    background: purple;
   }
