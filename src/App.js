@@ -10,6 +10,7 @@ function App() {
       <h1>Garrett Troyer's React Portfolio!</h1>
       <Header />
       <ProjectHolder />
+      <canvas id="canvas"></canvas>
       <Footer />
       
     </div>
