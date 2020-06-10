@@ -15,9 +15,6 @@ function Header() {
                   <a href="https://stackexchange.com/users/17871593/fruityvegetables" target="blank">StackExchange</a>
               </p>
               <p>
-                  <a href="https://www.facebook.com/FruityVegetables" target="blank">FaceBook</a>
-              </p>
-              <p>
                   <a href="mailto:gg.troyer@gmail.com" target="blank">Email Me!</a>
               </p>
               
