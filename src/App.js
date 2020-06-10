@@ -11,6 +11,7 @@ function App() {
       <Header />
       <ProjectHolder />
       <canvas id="canvas"></canvas>
+      <canvas id="myCanvas"></canvas>
       <Footer />
       
     </div>

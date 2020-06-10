@@ -1,16 +1,17 @@
 .project {
     border: 2px solid black;
-    background: teal;
+    background: #27496d;
+    color: #0c7b93;
 }
 
 .project:nth-of-type(2) {
-    background: fuchsia;
+    background: white;
   }
 
 .project:nth-of-type(7) {
-    background: fuchsia;
+    background: white;
   }
 
 .project:nth-of-type(n):hover {
-    background:green;
+    background:#00a8cc;
   }

@@ -33,7 +33,7 @@ class ProjectHolder extends React.Component {
                 },
                 {
                     name: "PlantSheets",
-                    link: <a href="https://cynthia-dm1216.github.io/ProjectGroup1/" target="blank">Click me!</a>
+                    link: <a href="https://github.com/kyledahl201/plant-market" target="blank">Click me!</a>
                 }
             ]
 
@@ -155,10 +155,19 @@ class ProjectHolder extends React.Component {
                 //end of doom function...
                 break;
             case "React Employee Directory":
-                alert("this is emp directory");
+                window.open("https://github.com/fruityvegetables/reactEmployeeDirectory/blob/master/README.md");
                 break;
             case "React Google Book Search":
-                window.confirm("Do YOU REALLY WANNA SEE THIS???");
+                window.open("https://github.com/fruityvegetables/reactBookSearch/blob/master/README.md");
+                break;
+            case "Career Resource Wiki":
+                window.open("https://github.com/aroblesgalit/Project2/blob/master/README.md");
+                break;
+            case "Superhero Background & Backgrounds":
+                window.open("https://github.com/cynthia-dm1216/ProjectGroup1/blob/master/README.md");
+                break;
+            case "PlantSheets":
+                window.open("https://github.com/kyledahl201/plant-market/blob/master/README.md");
                 break;
             default:
                 console.log("no switch case made for this yet");

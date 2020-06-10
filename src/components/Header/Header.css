@@ -9,6 +9,10 @@
 }
 
 .header a {
-    color: black;
+    color: #0c7b93;
     border: white 2px solid;
+}
+
+h1 {
+    color: #0c7b93;
 }
