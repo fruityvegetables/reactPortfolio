@@ -14,7 +14,6 @@ function Project(props) {
                 </h3>
                 </strong> 
             <div className="img-container">
-          For gif image later
             </div>
           </div>
           <p>
