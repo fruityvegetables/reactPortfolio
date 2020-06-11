@@ -8,6 +8,8 @@ function App() {
   return (
     <div className="App">
       <h1>Garrett Troyer's React Portfolio!</h1>
+      <h2>Sorry for the layout at the moment.</h2>
+      <h3>The buttons are links to README's. If there is a deployed version, click the indicated link!</h3>
       <Header />
       <ProjectHolder />
       <canvas id="canvas"></canvas>
