@@ -13,6 +13,10 @@
     border: white 2px solid;
 }
 
-h1, h2, h3 {
+h1, h2, h4 {
     color: #0c7b93;
+}
+
+h1:hover, h2:hover, h4:hover {
+    color: #00a8cc;
 }
