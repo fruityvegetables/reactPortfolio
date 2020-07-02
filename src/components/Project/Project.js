@@ -15,10 +15,17 @@ function Project(props) {
                 </strong> 
             <div className="img-container">
             </div>
+            <div className="about-container">
+              {props.about}
+              <br></br>
+              <br></br>
+              </div>
+              <strong>Tech used:</strong><div className="tech-container"> {props.tech}</div>
           </div>
-          <p>
+          <br></br>
+          <div className="link-container">
             <strong>Link to deployed version:</strong> {props.link}
-          </p>
+          </div>
           <button onClick={props.onClick}>{props.dataId}</button>
       </div>
     </div>

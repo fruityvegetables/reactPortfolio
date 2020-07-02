@@ -21,3 +21,9 @@
 .project:nth-of-type(n):hover {
     background:#00a8cc;
   }
+.tech-container {
+  color: white;
+}
+.about-container {
+  color: white;
+}
