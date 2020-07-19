@@ -9,8 +9,10 @@ function App() {
   return (
     <div className="App">
       <h1>Garrett Troyer's React Portfolio!</h1>
+      <Header />
       <h2>Skills</h2>
       <Skills />
+
       <h2>About Me...</h2>
       <h4>
         I am a recent coding boot camp graduate, as of June 2020. 
@@ -20,9 +22,8 @@ function App() {
         <br></br>So one day in the future, I aim to help bridge the gap between our bodies and technology as much as possible with other people who have similar intent. 
         <br></br>For now, making websites is a pretty neat trick (o:
         <br></br>The buttons beneath each project are links to README's.
-        <br></br>If the gif image of the project being used bothers you on a mobile device, simply click in the project somewhere to hide it.</h4>
+        <br></br>If the gif image of the project being used bothers you on a mobile device, simply tap in the project somewhere to hide it.</h4>
         
-      <Header />
       <ProjectHolder />
       <canvas id="canvas"></canvas>
       <canvas id="myCanvas"></canvas>
