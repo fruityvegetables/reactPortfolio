@@ -9,14 +9,17 @@ class ProjectHolder extends React.Component {
             projects: [
                 {
                     name: "Superhero Background & Backgrounds",
-                    about: "This project utilizes two 3rd party APIs to conjure statistics about a Superhero the user searches for, and backgrounds that can be used for a wallpaper.",
-                    tech: "HTML, CSS (Bootstrap), JavaScript, jQuery, Axios, APIs",
+                    about1: "This project utilizes two 3rd party APIs to conjure statistics about a Superhero the user",
+                    about2: "searches for, and backgrounds that can be used for a wallpaper.",
+                   // picture: "./SuperheroBnB.gif",
+                    tech: "HTML, CSS(Bootstrap), JavaScript, jQuery, Axios, APIs",
                     link: <a href="https://cynthia-dm1216.github.io/ProjectGroup1/" target="blank">Click me!</a>
                 },
                 {
                     name: "Career Resource Wiki",
-                    about: "This project was made to ensure that as students, we could all share links to relevant learning materials. It features a full-stack system to allow users to login and create these resources.",
-                    tech: "HTML, CSS (Bootstrap), JavaScript, jQuery, Axios, APIs (we created), Node, Express, MySQL, Sequelize, Heroku",
+                    about1: "Full-stack system for users to login and create resources in tech roles. Created",
+                    about2: "to ensure that we as students could all share links to relevant learning materials.",
+                    tech: "HTML/CSS/JavaScript, jQuery, Axios, API, Node, Express, MySQL, Sequelize, Heroku",
                     link: <a href="https://secure-shelf-77308.herokuapp.com/" target="blank">Click me!</a>
                 },
                 {
@@ -183,7 +186,9 @@ class ProjectHolder extends React.Component {
                 {this.state.projects.map((projects, index) => (
                     <Project
                         name={projects.name}
-                        about={projects.about}
+                        about1={projects.about1}
+                        about2={projects.about2}
+                        picture={projects.picture}
                         tech={projects.tech}
                         link={projects.link}
                         dataId={projects.name}

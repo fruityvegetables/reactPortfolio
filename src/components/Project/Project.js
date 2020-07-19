@@ -14,10 +14,12 @@ function Project(props) {
                 </h3>
                 </strong> 
             <div className="img-container">
+            {props.picture}
             </div>
             <div className="about-container">
-              {props.about}
+              {props.about1}<br></br>{props.about2}
               <br></br>
+              
               <br></br>
               </div>
               <strong>Tech used:</strong><div className="tech-container"> {props.tech}</div>
