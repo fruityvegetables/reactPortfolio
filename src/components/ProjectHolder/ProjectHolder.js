@@ -8,6 +8,13 @@ class ProjectHolder extends React.Component {
         this.state = {
             projects: [
                 {
+                    name: "PlantStack",
+                    about1: "Full-stack system for users to upload photos of plants and sell them to other",
+                    about2: "users - for free. A blend of social media & ecommerce solutions - a work in progress!",
+                    tech: "React, HTML/CSS/JavaScript, jQuery, JWT, Axios, API, Node, Express, MySQL, Sequelize, Heroku",
+                    link: <a href="https://github.com/fruityvegetables/plantstack" target="blank">Click me!</a>
+                },
+                {
                     name: "Superhero Background & Backgrounds",
                     about1: "This project utilizes two 3rd party APIs to conjure statistics about a Superhero the user",
                     about2: "searches for, and backgrounds that can be used for a wallpaper.",
@@ -22,27 +29,26 @@ class ProjectHolder extends React.Component {
                     tech: "HTML/CSS/JavaScript, jQuery, Axios, API, Node, Express, MySQL, Sequelize, Heroku",
                     link: <a href="https://secure-shelf-77308.herokuapp.com/" target="blank">Click me!</a>
                 },
-                {
-                    name: "React Employee Directory",
-                    link: <a href="https://fruityvegetables.github.io/reactEmployeeDirectory/" target="blank">Click me!</a>
-                },
-                {
-                    name: "Employee CMS - Node Application",
-                    link: <a href="https://github.com/fruityvegetables/employeeTracker" target="blank">It is a GitHub Repo!</a>
-                },
+                // {
+                //     name: "React Employee Directory",
+                //     link: <a href="https://fruityvegetables.github.io/reactEmployeeDirectory/" target="blank">Click me!</a>
+                // },
+                // {
+                //     name: "Employee CMS - Node Application",
+                //     link: <a href="https://github.com/fruityvegetables/employeeTracker" target="blank">It is a GitHub Repo!</a>
+                // },
                 {
                     name: "Express Note Taker",
-                    link: <a href="https://github.com/fruityvegetables/NoteTaker" target="blank">Also a GitHub Repo!</a>
-                },
-                {
-                    name: "React Google Book Search",
-                    link: <a href="https://gtroyer-react-book-search.herokuapp.com/" target="blank">Click me!</a>
-                },
-                {
-                    name: "PlantSheets",
-                    link: <a href="https://github.com/kyledahl201/plant-market" target="blank">Click me!</a>
+                    about1: "This is a web application for taking notes.",
+                    about2: "It uses Express.js and an API to create, read, update, and delete notes.",
+                    tech: "HTML/CSS/JavaScript, jQuery, Axios, API, Node.js, Express.js",
+                    link: <a href="https://github.com/fruityvegetables/NoteTaker" target="blank">Click me!</a>
                 }
-            ]
+                // {
+                //     name: "React Google Book Search",
+                //     link: <a href="https://gtroyer-react-book-search.herokuapp.com/" target="blank">Click me!</a>
+                // },
+            ]  
 
         }
     }
