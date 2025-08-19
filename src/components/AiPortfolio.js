@@ -238,21 +238,22 @@ const Contact = () => {
       setAlert({ type: "danger", message: "Please enter a valid email address." });
       return;
     }
-  fetch("https://script.google.com/macros/s/AKfycbyJAyn9wor6HTF4WbnTXqzSDEgYHcG4hsmW3zsDHEP9x1cJ5ScfpHmlru3gtVXgREY5/exec", {
-    method: "POST",
-    mode: "no-cors",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(formData),
-  })
-    .then(() => {
-      setStatus({ type: "success", message: "Message sent successfully!" });
-      setFormData({ name: "", email: "", message: "" });
-    })
-    .catch(() => {
-      setStatus({ type: "error", message: "Failed to send message." });
-    });
+
+    try {
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyJAyn9wor6HTF4WbnTXqzSDEgYHcG4hsmW3zsDHEP9x1cJ5ScfpHmlru3gtVXgREY5/exec";
+
+      await fetch(scriptURL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      setAlert({ type: "success", message: "Your message has been sent successfully!" });
+      setForm({ name: "", email: "", subject: "", message: "" });
+    } catch {
+      setAlert({ type: "danger", message: "An error occurred. Please try again later." });
+    }
 
     setTimeout(() => setAlert(null), 5000);
   };
