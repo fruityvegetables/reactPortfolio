@@ -243,7 +243,7 @@ const Contact = () => {
       fd.append("email", email);
       fd.append("subject", subject);
       fd.append("message", message);
-      const response = await fetch(scriptURL, { method: "POST", body: fd });
+      const response = await fetch(scriptURL, {method: "POST", mode: "no-cors", headers: {"Content-Type": "application/json"}, body: JSON.stringify(formData),});
       if (response.ok) {
         setAlert({ type: "success", message: "Your message has been sent successfully!" });
         setForm({ name: "", email: "", subject: "", message: "" });
