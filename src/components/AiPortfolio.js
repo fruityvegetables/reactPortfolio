@@ -237,6 +237,7 @@ const Contact = () => {
     }
     try {
       const scriptURL = "https://script.google.com/macros/s/AKfycbyJAyn9wor6HTF4WbnTXqzSDEgYHcG4hsmW3zsDHEP9x1cJ5ScfpHmlru3gtVXgREY5/exec";
+
       const fd = new FormData();
       fd.append("name", name);
       fd.append("email", email);
