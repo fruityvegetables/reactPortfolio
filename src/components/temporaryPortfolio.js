@@ -233,7 +233,7 @@ const Contact = () => {
       setAlert({ type: "danger", message: "Please fill in all fields." });
       return;
     }
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;;
+    const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
     if (!emailRegex.test(email)) {
       setAlert({ type: "danger", message: "Please enter a valid email address." });
       return;
