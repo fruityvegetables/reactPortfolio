@@ -3,6 +3,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/aiPortfolio.css";
+
+import plantstack from "./Project/plantstack.gif"
+import SuperheroBnB from "./Project/SuperheroBnB.gif"
+import CareerResourcesWiki from "./Project/CareerResourcesWiki.gif"
+import noteTaker from "./Project/noteTaker.gif"
+
+
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaEnvelope, FaPhone, FaMapMarkerAlt, FaArrowUp } from "react-icons/fa";
 
 const useSmoothScroll = () => {
@@ -35,7 +42,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? "scrolled" : ""}`}>
       <div className="container">
-        <a className="navbar-brand" href="#home">AI<span>Portfolio</span></a>
+        <a className="navbar-brand" href="#home">Garrett Troyer's <span>Portfolio</span></a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -58,8 +65,8 @@ const Hero = () => (
     <div className="container h-100">
       <div className="row h-100 align-items-center">
         <div className="col-md-6" data-aos="fade-right">
-          <h1 className="fw-bold display-4">Innovative <span className="highlight">AI Solutions</span></h1>
-          <p className="lead my-4">Showcasing cutting-edge artificial intelligence projects and applications.</p>
+          <h1 className="fw-bold display-4">Web3 <span className="highlight">Machine Learning</span></h1>
+          <p className="lead my-4">Showcasing my old web2 projects and some new ones with web3.</p>
           <a href="#projects" className="btn btn-primary btn-lg">View Projects</a>
         </div>
         <div className="col-md-6 d-flex justify-content-center" data-aos="fade-left">
@@ -87,7 +94,7 @@ const About = () => (
     <div className="container">
       <div className="row">
         <div className="col-12 text-center mb-5">
-          <h2 className="section-title" data-aos="fade-up">About My AI Journey</h2>
+          <h2 className="section-title" data-aos="fade-up">About Me</h2>
           <div className="section-divider"></div>
         </div>
       </div>
@@ -99,8 +106,9 @@ const About = () => (
         </div>
         <div className="col-md-6" data-aos="fade-left">
           <div className="about-content">
-            <h3>Passionate About Artificial Intelligence</h3>
+            <h3>Passionate About Artificial Intelligence, Web3, and bettering our health</h3>
             <p>Exploring the vast potential of artificial intelligence to solve real-world problems with machine learning, NLP, and computer vision.</p>
+            <p>Learning Web 3.0 to better understand modern finance and security.</p>
             <div className="stats-container mt-4">
               <div className="row">
                 {[{ label: "Projects", value: "15+" }, { label: "Years", value: "5+" }, { label: "Clients", value: "10+" }].map((s) => (
@@ -145,7 +153,7 @@ const Projects = () => (
     <div className="container">
       <div className="row">
         <div className="col-12 text-center mb-5">
-          <h2 className="section-title" data-aos="fade-up">Featured AI Projects</h2>
+          <h2 className="section-title" data-aos="fade-up">Featured Web3 Projects</h2>
           <div className="section-divider"></div>
         </div>
       </div>
@@ -155,6 +163,20 @@ const Projects = () => (
         <ProjectCard img="https://images.unsplash.com/photo-1551288049-bebda4e38f71" title="Predictive Analytics" description="Forecasting market trends with ML." tech={["Scikit-learn", "Pandas", "XGBoost"]} />
         <ProjectCard img="" title="New Project" description="Add description here." tech={[]} />
         <ProjectCard img="" title="New Project" description="Add description here." tech={[]} />
+      </div>
+    </div>
+    <div className="container">
+      <div className="row">
+        <div className="col-12 text-center mb-5">
+          <h2 className="section-title" data-aos="fade-up">Classic Web2 Projects</h2>
+          <div className="section-divider"></div>
+        </div>
+      </div>
+      <div className="row">
+        <ProjectCard img={plantstack} title="PlantStack" description="A storefront for users to sell plants" tech={["React", "Node.js", "MySQL"]} />
+        <ProjectCard img={SuperheroBnB} title="Superhero Background & Backgrounds" description="This project utilizes two 3rd party APIs to conjure statistics about a Superhero the user searches for, and backgrounds that can be used for a wallpaper." tech={["Bootstrap", "jQuery", "Axios"]} />
+        <ProjectCard img={CareerResourcesWiki} title="Career Resource Wiki" description="Full-stack system for users to login and create resources in tech roles. Created to ensure that we as students could all share links to relevant learning materials." tech={["Node.js", "Express.js", "MySQL"]} />
+        <ProjectCard img={noteTaker} title="Express Note Taker" description="This is a web application for taking notes. It uses Express.js and an API to create, read, update, and delete notes." tech={["jQuery", "Node.js", "Express.js"]} />
       </div>
     </div>
   </section>
@@ -172,14 +194,14 @@ const Skills = () => (
       <div className="row">
         <div className="col-lg-6" data-aos="fade-right">
           <div className="skills-content">
-            <h3>AI & Machine Learning</h3>
-            <p>Expertise across ML, NLP, and CV for solving real-world problems.</p>
+            <h3>Web3</h3>
+            <p>Expertise across Solidity & hardhat for solving real-world business problems.</p>
             <div className="skill-category mt-4">
-              <h5>Machine Learning</h5>
+              <h5>Solidity</h5>
               <div className="skill-tags">
-                <span className="skill-tag">Supervised Learning</span>
-                <span className="skill-tag">Unsupervised Learning</span>
-                <span className="skill-tag">Reinforcement Learning</span>
+                <span className="skill-tag">Low-Level programming</span>
+                <span className="skill-tag">Hardhat test suite</span>
+                <span className="skill-tag">Security on the blockchain</span>
               </div>
             </div>
           </div>
@@ -188,7 +210,7 @@ const Skills = () => (
           <div className="skills-content">
             <h3>Programming & Tools</h3>
             <div className="skill-tags">
-              {["Python", "JavaScript", "React", "Node.js", "TensorFlow", "PyTorch", "Docker", "AWS"].map((s) => <span className="skill-tag" key={s}>{s}</span>)}
+              {["Python", "JavaScript", "React", "Node.js", "TensorFlow", "PyTorch", "Docker", "AWS", "Solidity"].map((s) => <span className="skill-tag" key={s}>{s}</span>)}
             </div>
           </div>
         </div>
@@ -214,7 +236,7 @@ const Contact = () => {
       return;
     }
     try {
-      const scriptURL = "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec";
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyJAyn9wor6HTF4WbnTXqzSDEgYHcG4hsmW3zsDHEP9x1cJ5ScfpHmlru3gtVXgREY5/exec";
       const fd = new FormData();
       fd.append("name", name);
       fd.append("email", email);
@@ -281,13 +303,13 @@ const Contact = () => {
         </div>
         <div className="row mt-5">
           <div className="col-md-4 text-center" data-aos="fade-up">
-            <div className="contact-info"><div className="contact-icon"><FaEnvelope /></div><h4>Email</h4><p>contact@aiportfolio.com</p></div>
+            <div className="contact-info"><div className="contact-icon"><FaEnvelope /></div><h4>Email</h4><p>gg.troyer@gmail.com</p></div>
           </div>
           <div className="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
-            <div className="contact-info"><div className="contact-icon"><FaPhone /></div><h4>Phone</h4><p>+1 (555) 123-4567</p></div>
+            <div className="contact-info"><div className="contact-icon"><FaPhone /></div><h4>Phone</h4><p>+1 (512) 660-7979</p></div>
           </div>
           <div className="col-md-4 text-center" data-aos="fade-up" data-aos-delay="400">
-            <div className="contact-info"><div className="contact-icon"><FaMapMarkerAlt /></div><h4>Location</h4><p>San Francisco, CA</p></div>
+            <div className="contact-info"><div className="contact-icon"><FaMapMarkerAlt /></div><h4>Location</h4><p>South Texas</p></div>
           </div>
         </div>
       </div>
@@ -300,10 +322,10 @@ const Footer = () => (
     <div className="container">
       <div className="row align-items-center">
         <div className="col-md-4 text-center text-md-start">
-          <span className="copyright">© 2025 AI Portfolio. All Rights Reserved.</span>
+          <span className="copyright">© 2025 AI Portfolio. No Rights Reserved. Predominantly made with ChatGPT, Cline, and my own skills. Feel free to use it!</span>
         </div>
         <div className="col-md-4 text-center">
-          <a className="footer-brand" href="#home">AI<span>Portfolio</span></a>
+          <a className="footer-brand" href="#home">Garrett's <span>Portfolio</span></a>
         </div>
         <div className="col-md-4 text-center text-md-end">
           <ul className="social-icons">
