@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reactPortfolio/static/css/main.3c34e784.css",
-    "main.js": "/reactPortfolio/static/js/main.b1a51ee1.js",
+    "main.js": "/reactPortfolio/static/js/main.317daefb.js",
     "static/media/SuperheroBnB.gif": "/reactPortfolio/static/media/SuperheroBnB.8c1bb185425b6beb723d.gif",
     "static/media/CareerResourcesWiki.gif": "/reactPortfolio/static/media/CareerResourcesWiki.448a4fbb73f40c45d1c9.gif",
     "static/media/noteTaker.gif": "/reactPortfolio/static/media/noteTaker.59852ec7ca6970db497d.gif",
@@ -16,10 +16,10 @@
     "static/media/crypto_network.jpg": "/reactPortfolio/static/media/crypto_network.49398a3a64e4f4ec0550.jpg",
     "index.html": "/reactPortfolio/index.html",
     "main.3c34e784.css.map": "/reactPortfolio/static/css/main.3c34e784.css.map",
-    "main.b1a51ee1.js.map": "/reactPortfolio/static/js/main.b1a51ee1.js.map"
+    "main.317daefb.js.map": "/reactPortfolio/static/js/main.317daefb.js.map"
   },
   "entrypoints": [
     "static/css/main.3c34e784.css",
-    "static/js/main.b1a51ee1.js"
+    "static/js/main.317daefb.js"
   ]
 }
