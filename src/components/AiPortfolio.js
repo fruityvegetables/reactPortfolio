@@ -9,6 +9,16 @@ import SuperheroBnB from "./Project/SuperheroBnB.gif"
 import CareerResourcesWiki from "./Project/CareerResourcesWiki.gif"
 import noteTaker from "./Project/noteTaker.gif"
 
+import gpt_biotech from "./Project/gpt_biotech.png"
+import eth_comic from "./Project/eth_comic.jpg"
+import crypto_network from "./Project/crypto_network.jpg"
+import eth_pool from "./Project/eth_pool.jpg"
+import web3_graffiti from "./Project/web3_graffiti.jpg"
+import eth_brain from "./Project/eth_brain.jpg"
+import cloud_head from "./Project/cloud_head.png"
+
+import cloud_vid from "./midjourney_u1823883242_An_image_of_a_person_seeing_a_storm.mp4"
+
 
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaEnvelope, FaPhone, FaMapMarkerAlt, FaArrowUp } from "react-icons/fa";
 
@@ -65,8 +75,8 @@ const Hero = () => (
     <div className="container h-100">
       <div className="row h-100 align-items-center">
         <div className="col-md-6" data-aos="fade-right">
-          <h1 className="fw-bold display-4">Web3 <span className="highlight">Machine Learning</span></h1>
-          <p className="lead my-4">Showcasing my old web2 projects and some new ones with web3.</p>
+          <h1 className="fw-bold display-4">Web 3.0 & <span className="highlight">Machine Learning</span></h1>
+          <p className="lead my-4">Welcome to Garrett's portfolio! I like to keep it simple. All images are AI generated, of course.</p>
           <a href="#projects" className="btn btn-primary btn-lg">View Projects</a>
         </div>
         <div className="col-md-6 d-flex justify-content-center" data-aos="fade-left">
@@ -101,17 +111,18 @@ const About = () => (
       <div className="row align-items-center">
         <div className="col-md-6" data-aos="fade-right">
           <div className="about-image">
-            <img src="https://images.unsplash.com/photo-1591453089816-0fbb971b454c" alt="AI" className="img-fluid rounded-3 shadow" />
+            <img src={gpt_biotech} alt="AI" className="img-fluid rounded-3 shadow" />
           </div>
         </div>
         <div className="col-md-6" data-aos="fade-left">
           <div className="about-content">
-            <h3>Passionate About Artificial Intelligence, Web3, and bettering our health</h3>
-            <p>Exploring the vast potential of artificial intelligence to solve real-world problems with machine learning, NLP, and computer vision.</p>
-            <p>Learning Web 3.0 to better understand modern finance and security.</p>
+            <h3>Passionate About Artificial Intelligence, and how it can better our health.</h3>
+            <p>My end goal is to work with AI to better the human body. Along the way, I've decided to pick up some Web 3 skills.</p>
+            <p>Learning Web 3 to better understand modern finance and security.</p>
+            <p>Learning AI to make everyone healthier with cybernetics.</p>
             <div className="stats-container mt-4">
               <div className="row">
-                {[{ label: "Projects", value: "15+" }, { label: "Years", value: "5+" }, { label: "Clients", value: "10+" }].map((s) => (
+                {[{ label: "Years", value: "5+" }, { label: "A.A.S. Computer Programming", value: "1" }, { label: "Coding Bootcamps", value: "2" }].map((s) => (
                   <div className="col-4" key={s.label}>
                     <div className="stat-item">
                       <h4>{s.value}</h4>
@@ -158,11 +169,24 @@ const Projects = () => (
         </div>
       </div>
       <div className="row">
-        <ProjectCard img="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb" title="Natural Language Processing" description="Sentiment analysis with 95% accuracy." tech={["Python", "BERT", "TensorFlow"]} />
-        <ProjectCard img="https://images.unsplash.com/photo-1531746790731-6c087fecd65a" title="Computer Vision" description="Real-time object detection app." tech={["PyTorch", "OpenCV", "YOLO"]} />
-        <ProjectCard img="https://images.unsplash.com/photo-1551288049-bebda4e38f71" title="Predictive Analytics" description="Forecasting market trends with ML." tech={["Scikit-learn", "Pandas", "XGBoost"]} />
-        <ProjectCard img="" title="New Project" description="Add description here." tech={[]} />
-        <ProjectCard img="" title="New Project" description="Add description here." tech={[]} />
+        <ProjectCard img={eth_comic} title="Crazy Token CRZT" description="God-Mode activated cryptocurrency." tech={["Solidity", "OpenZeppelin"]} />
+        <ProjectCard img={crypto_network} title="Escrow Contract" description="A deployable smart contract that acts as an escrow." tech={["Solidity", "OpenZeppelin", "Hardhat"]} />
+        <ProjectCard img={eth_pool} title="Rewards Pool" description="Securely turns Ether donations into reward tokens" tech={["Solidity", "OpenZeppelin"]} />
+        <ProjectCard img={web3_graffiti} title="Vesting vault, NFT, and Loot Crate shop" description="3 mini projects with OpenZeppelin's token standards." tech={[]} />
+        <ProjectCard img={eth_brain} title="Frontend integration for web3" description="React and Tailwind based frontend for the projects. Connectivity with dApps like Metamask & WalletConnect." tech={[]} />
+        <ProjectCard img={cloud_head} title="Plus many more to come..." description="" tech={[]} />
+        <video
+        width="280"
+        height="720"
+        controls
+        autoPlay
+        loop
+        muted
+        className="rounded-xl shadow-lg"
+      >
+        <source src={cloud_vid} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       </div>
     </div>
     <div className="container">
