@@ -351,7 +351,7 @@ const Footer = () => (
     <div className="container">
       <div className="row align-items-center">
         <div className="col-md-4 text-center text-md-start">
-          <span className="copyright">Predominantly made with ChatGPT, Cline, and my own skills. Images/video generated with stable diffusion, midjourney, canva, and dall-e. Feel free to use anything!</span>
+          <span className="copyright">Made with ChatGPT, Cline, and my own skills. Images/video generated with stable diffusion, midjourney, canva, and dall-e. Feel free to use anything!</span>
         </div>
         <div className="col-md-4 text-center">
           <a className="footer-brand" href="#home">Garrett's <span>Portfolio</span></a>
