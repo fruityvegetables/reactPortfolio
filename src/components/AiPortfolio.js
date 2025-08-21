@@ -164,7 +164,7 @@ const Projects = () => (
     <div className="container">
       <div className="row">
         <div className="col-12 text-center mb-5">
-          <h2 className="section-title" data-aos="fade-up">Featured Web3 Projects</h2>
+          <h2 className="section-title" data-aos="fade-up">Featured Web 3 Projects</h2>
           <div className="section-divider"></div>
         </div>
       </div>
@@ -192,7 +192,7 @@ const Projects = () => (
     <div className="container">
       <div className="row">
         <div className="col-12 text-center mb-5">
-          <h2 className="section-title" data-aos="fade-up">Classic Web2 Projects</h2>
+          <h2 className="section-title" data-aos="fade-up">Classic Web 2 Projects</h2>
           <div className="section-divider"></div>
         </div>
       </div>
