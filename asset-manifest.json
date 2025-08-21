@@ -1,17 +1,25 @@
 {
   "files": {
     "main.css": "/reactPortfolio/static/css/main.3c34e784.css",
-    "main.js": "/reactPortfolio/static/js/main.89dd6c5b.js",
+    "main.js": "/reactPortfolio/static/js/main.b1a51ee1.js",
     "static/media/SuperheroBnB.gif": "/reactPortfolio/static/media/SuperheroBnB.8c1bb185425b6beb723d.gif",
     "static/media/CareerResourcesWiki.gif": "/reactPortfolio/static/media/CareerResourcesWiki.448a4fbb73f40c45d1c9.gif",
     "static/media/noteTaker.gif": "/reactPortfolio/static/media/noteTaker.59852ec7ca6970db497d.gif",
     "static/media/plantstack.gif": "/reactPortfolio/static/media/plantstack.8be6a091f3f965ebb373.gif",
+    "static/media/midjourney_u1823883242_An_image_of_a_person_seeing_a_storm.mp4": "/reactPortfolio/static/media/midjourney_u1823883242_An_image_of_a_person_seeing_a_storm.815ae4c096efe3ec212c.mp4",
+    "static/media/gpt_biotech.png": "/reactPortfolio/static/media/gpt_biotech.07accaa32444817cd42f.png",
+    "static/media/cloud_head.png": "/reactPortfolio/static/media/cloud_head.bb31bc21bcb0a0568327.png",
+    "static/media/eth_comic.jpg": "/reactPortfolio/static/media/eth_comic.de0b086a2032b964e728.jpg",
+    "static/media/web3_graffiti.jpg": "/reactPortfolio/static/media/web3_graffiti.fe05f7d4bd75f76c78c6.jpg",
+    "static/media/eth_pool.jpg": "/reactPortfolio/static/media/eth_pool.ffa1d07b5a4c8f39c28f.jpg",
+    "static/media/eth_brain.jpg": "/reactPortfolio/static/media/eth_brain.b856677217477b42059f.jpg",
+    "static/media/crypto_network.jpg": "/reactPortfolio/static/media/crypto_network.49398a3a64e4f4ec0550.jpg",
     "index.html": "/reactPortfolio/index.html",
     "main.3c34e784.css.map": "/reactPortfolio/static/css/main.3c34e784.css.map",
-    "main.89dd6c5b.js.map": "/reactPortfolio/static/js/main.89dd6c5b.js.map"
+    "main.b1a51ee1.js.map": "/reactPortfolio/static/js/main.b1a51ee1.js.map"
   },
   "entrypoints": [
     "static/css/main.3c34e784.css",
-    "static/js/main.89dd6c5b.js"
+    "static/js/main.b1a51ee1.js"
   ]
 }
